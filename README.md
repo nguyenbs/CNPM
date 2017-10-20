@@ -3,4 +3,4 @@
   - Thứ nhất: Doanh nghiệp có thể bớt một phần chi phí cho quảng bá doanh nghiệp hoặc giảm chi phí thời gian tuyển nhân lực cho dù công việc yêu cầu ngắn hạn.
   - Thứ hai: Doanh nghiệp có thể đưa ra một vài bài test yêu cầu cần thiết để người ứng tuyển có thể biết được mình còn thiếu sót gì cho đợt tuyển dụng.
   - Thứ ba: Nguồn thông tin phong phú đưa ra nhiều cơ hội cho nhiều người nhiều đối tượng giải quyết được một phần vấn đề việc làm.
-  - Thứ tư: Ngay từ khi ngồi trên ghế cấp 3 học sinh có thể đinh hướng phù hợp với bản thân cho tương lai nhờ thống kê kết quả trước đó nâng cao tinh thần học tập khi bước vào giảng đường Đại Học.
+  - Thứ tư: Ngay từ khi ngồi trên ghế cấp 3 học sinh có thể đinh hướng phù hợp với bản thân cho tương lai nhờ thống kê kết quả trước đó nâng cao tinh thần học tập khi bước vào giảng đường Đại Học.
