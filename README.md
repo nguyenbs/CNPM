@@ -2,8 +2,8 @@
 * Với sự phát triển mạnh mẽ của Công Nghệ Thông Tin đặc biệt là cuộc cách mạng 4.0 mang đến nhiều cơ hội và thách thức cho vấn đề giải quyết việc làm.
 *  Bài toán xây dựng một phần mềm quản lý và chia sẻ thông tin công việc được tạo ra để thực hiện việc này một cách hiệu quả hơn trong xu hướng hiện thời.
 <ul>
-  <li>1. Thứ nhất: Doanh nghiệp có thể bớt một phần chi phí cho quảng bá doanh nghiệp hoặc giảm chi phí thời gian tuyển nhân lực cho dù công việc yêu cầu ngắn hạn.</li>
-  <li>2. Thứ hai: Doanh nghiệp có thể đưa ra một vài bài test yêu cầu cần thiết để người ứng tuyển có thể biết được mình còn thiếu sót gì cho đợt tuyển dụng.</li>
-  <li>3. Thứ ba: Nguồn thông tin phong phú đưa ra nhiều cơ hội cho nhiều người nhiều đối tượng giải quyết được một phần vấn đề việc làm.</li>
-  <li>4. Thứ tư: Ngay từ khi ngồi trên ghế cấp 3 học sinh có thể đinh hướng phù hợp với bản thân cho tương lai nhờ thống kê kết quả trước đó nâng cao tinh thần học tập khi bước vào giảng đường Đại Học.</li>
-  </ul>
+  1. Doanh nghiệp có thể bớt một phần chi phí cho quảng bá doanh nghiệp hoặc giảm chi phí thời gian tuyển nhân lực cho dù công việc yêu cầu ngắn hạn.
+  2. Doanh nghiệp có thể đưa ra một vài bài test yêu cầu cần thiết để người ứng tuyển có thể biết được mình còn thiếu sót gì cho đợt tuyển dụng.
+  3. Nguồn thông tin phong phú đưa ra nhiều cơ hội cho nhiều người nhiều đối tượng giải quyết được một phần vấn đề việc làm.
+  4. Ngay từ khi ngồi trên ghế cấp 3 học sinh có thể đinh hướng phù hợp với bản thân cho tương lai nhờ thống kê kết quả trước đó nâng cao tinh thần học tập khi bước vào giảng đường Đại Học.
+</ul>
