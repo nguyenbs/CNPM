@@ -1,0 +1,210 @@
+body {
+	margin: 0px;
+}
+#title {
+	position: absolute;
+	left: 60%;
+	top: 45%;
+	padding: 20px;
+	transform: translate(-50%, -50%);
+}
+
+#title1 {
+	color: red;
+	font-size: 30px;
+	font-family: Times New Roman;
+	width: 600px;
+}
+
+#title2 {
+	color: blue;
+	font-size: 20px;
+}
+
+#slide {
+	width: 1140px;
+	height: 500px;
+	background-image:
+		url(https://media.laodong.vn/uploaded/nguyenthithuloan/2017_03_14/Top-5-kenh-tuyen-dung-viec-lam-uy-tin-nhat-Viet-Nam-1_TAZB.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#header {
+	background-image:
+		url(https://anhdep99.com/wp-content/uploads/2016/07/anh-bia-facebook-dep-full-hd-mat-nuoc-mua-he-long-lanh.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 1140px;
+	height: 200px;
+	position: relative;
+	padding-bottom: 0px;
+	overflow: auto;
+	margin: 0 auto;
+}
+
+#footer {
+	color: white;
+	padding: 10px;
+	text-align: center;
+	background-image:
+		url(http://anhbiafb.com/uploads/ctv_2/FILE-20170314-1641SH5578LT1ZVL.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 1140px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+#form_tim_viec {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	padding: 20px;
+	transform: translate(-50%, -50%);
+}
+
+.form-group {
+	height: 100px;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #f8f8f9;
+	font-size: 17px;
+}
+a:hover {
+	color: yellow;
+	text-decoration: underline;
+}
+
+a:active {
+	color: white;
+	text-decoration: none;
+}
+.clear {
+	clear: both;
+}
+
+.wrapper {
+	width: 1140px;
+	height: 38px;
+	background: #00A69B;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+.main_menu {
+	background: #00A69B;
+	margin: 0px;
+}
+
+.main_menu>ul>li {
+	float: left;
+	padding: 5px 20px;
+	position: relative;
+	border-right: 1px dotted #ffffff;
+}
+
+.main_menu>ul>li:last-child {
+	border-right: none;
+}
+
+.main_menu>ul>li>ul {
+	display: none;
+	position: absolute;
+	background: #00A69B;
+	top: 35px;
+	left: 0px;
+	width: 280px;
+}
+
+.main_menu>ul>li:hover ul {
+	display: block;
+}
+
+.main_menu ul li:hover {
+	background: #5F5C5C;
+	transition: all 0.25s;
+}
+
+.main_menu>ul>li>ul>li {
+	padding: 5px 10px;
+	border-bottom: 1px dotted #ACACAC;
+}
+
+h3 {
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+}
+
+strong {
+	margin-top: 20px;
+	padding-top: 15px;
+	font-family: Times New Roman;
+	font-size: 20px;
+}
+
+p {
+	text-indent: 30px;
+	text-align: justify;
+	font-family: Times New Roman;
+	font-size: 20px;
+}
+#welcome{
+	background: #FFEBCD;
+}
+#he img {
+	padding-top: 40px;
+}
+
+#hello {
+	padding-top: 70px;
+	color: red;
+	font-size: 20px;
+	text-align: left;
+}
+.row{
+	margin-left: 0px;
+	width: 1140px;
+}
+#find {
+	float: right;
+	padding-top: 140px;
+	padding-right: 20px;
+	height: 100px;
+}
+
+input[type="text"] {
+	width: 300px;
+	height: 45px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	padding-left: 40px;
+	border: none;
+}
+
+.btn-login {
+	height: 45px;
+	color: #fff;
+	cursor: pointer;
+	background-color: #2ECC71;
+	padding: 15px 25px;
+	border: none;
+	margin-bottom: 20px;
+}
