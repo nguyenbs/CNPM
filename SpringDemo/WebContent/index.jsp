@@ -166,12 +166,12 @@ input[type="text"] {
 			<div id="logo">
 				<img alt="logo" src="resources/image/logo_a.png" height="200px">
 				<div id="find">
-					<form action="${pageContext.request.contextPath}/find.html"
+					<form action="${pageContext.request.contextPath}/listTimKiem.htm"
 						id="formUser">
 						<div class="form-input">
-							<input type="text" id="username" name="username"
+							<input type="text" id="timKiem" name="timKiem"
 								onblur="clearMessage()" placeholder="Nhập từ khóa..." /><span>
-								<input type="submit" name="submit" value="Tìm kiếm"
+								<input type="submit"  value="Tìm kiếm"
 								class="btn-login">
 							</span>
 						</div>
@@ -191,7 +191,7 @@ input[type="text"] {
 					<li><span class="glyphicon glyphicon-leaf"></span><a
 						href="jsp/introduce.jsp">Giới thiệu</a></li>
 					<li><span class="glyphicon glyphicon-star"></span><a
-						href="${pageContext.request.contextPath}/listBaiVietMoi.html">Việc
+						href="${pageContext.request.contextPath}/listBaiVietMoi.htm">Việc
 							làm mới </a><img alt="icon-hot"
 						src="<c:url value ="resources/image/icon-hot.gif"/>" /></li>
 					<li><span class="glyphicon glyphicon-tag"></span><a
@@ -228,7 +228,7 @@ input[type="text"] {
 		</div>
 		<div id="slide">
 			<form class="form-inline"
-				action="${pageContext.request.contextPath}/bai_viet/listBaiViet.html">
+				action="${pageContext.request.contextPath}/listBaiViet.htm">
 				<div id="form_tim_viec">
 					<div class="form-group">
 						<div class="dropdown">

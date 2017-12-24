@@ -32,12 +32,12 @@
 			<div id="logo">
 				<img alt="logo" src="../resources/image/logo_a.png" height="200px">
 				<div id="find">
-					<form action="${pageContext.request.contextPath}/find.html"
+					<form action="${pageContext.request.contextPath}/listTimKiem.htm"
 						id="formUser">
 						<div class="form-input">
 							<input type="text" id="username" name="username"
 								onblur="clearMessage()" placeholder="Nhập từ khóa..." /><span>
-								<input type="submit" name="submit" value="Tìm kiếm"
+								<input type="submit"  value="Tìm kiếm"
 								class="btn-login">
 							</span>
 						</div>
@@ -56,7 +56,7 @@
 					<li><span class="glyphicon glyphicon-leaf"></span><a
 						href="introduce.jsp">Giới thiệu</a></li>
 					<li><span class="glyphicon glyphicon-star"></span><a
-						href="${pageContext.request.contextPath}/listBaiVietMoi.html">Việc
+						href="${pageContext.request.contextPath}/listBaiVietMoi.htm">Việc
 							làm mới </a><img alt="icon-hot"
 						src="<c:url value ="../resources/image/icon-hot.gif" />" /></li>
 					<li><span class="glyphicon glyphicon-tag"></span><a

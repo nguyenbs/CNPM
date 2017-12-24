@@ -2,6 +2,7 @@ package cdv.domain;
 
 import java.sql.Date;
 
+
 public class Account {
 	private int id;
 	private String username;

@@ -83,7 +83,7 @@
 <body>
 	<div class="container">
 		<img alt="anh admin" src="<c:url value ="../resources/image/icon_admin.png"/>">
-		<form  method="post" action="${pageContext.request.contextPath}/insertAccount.html" id = "formUser" onsubmit="return validateForm();">
+		<form  method="post" action="${pageContext.request.contextPath}/insertAccount.htm" id = "account" name="account" onsubmit="return validateForm();">
 			<div class="row">
 				<div class="col-md-6">
 					<p>Thông tin đăng nhập</p>

@@ -31,14 +31,14 @@
 
 		<div id=header>
 			<div id="logo">
-				<img alt="logo" src="../resources/image/logo_a.png" height="200px">
+				<img alt="logo" src="resources/image/logo_a.png" height="200px">
 				<div id="find">
-					<form action="${pageContext.request.contextPath}/find.html"
+					<form action="${pageContext.request.contextPath}/listTimKiem.htm"
 						id="formUser">
 						<div class="form-input">
 							<input type="text" id="username" name="username"
 								onblur="clearMessage()" placeholder="Nhập từ khóa..." /><span>
-								<input type="submit" name="submit" value="Tìm kiếm"
+								<input type="submit"  value="Tìm kiếm"
 								class="btn-login">
 							</span>
 						</div>
@@ -53,29 +53,29 @@
 			<div class="main_menu">
 				<ul>
 					<li><span class="glyphicon glyphicon-home"></span><a
-						href="../index.jsp">Trang chủ</a></li>
+						href="index.jsp">Trang chủ</a></li>
 					<li><span class="glyphicon glyphicon-leaf"></span><a
-						href="introduce.jsp">Giới thiệu</a></li>
+						href="jsp/introduce.jsp">Giới thiệu</a></li>
 					<li><span class="glyphicon glyphicon-star"></span><a
-						href="${pageContext.request.contextPath}/listBaiVietMoi.html">Việc
+						href="${pageContext.request.contextPath}/listBaiVietMoi.htm">Việc
 							làm mới </a><img alt="icon-hot"
-						src="<c:url value ="../resources/image/icon-hot.gif"/>" /></li>
+						src="<c:url value ="resources/image/icon-hot.gif"/>" /></li>
 					<li><span class="glyphicon glyphicon-tag"></span><a
-						href="account.jsp">Đăng ký</a></li>
+						href="jsp/account.jsp">Đăng ký</a></li>
 					<li><span class="glyphicon glyphicon-tags"></span><a
-						href="login.jsp">Đăng nhập</a></li>
+						href="jsp/login.jsp">Đăng nhập</a></li>
 					<li><span class="glyphicon glyphicon-globe"></span><a href="">Cẩm
 							nang việc làm</a>
 						<ul>
-							<li><a href="tendency.jsp">Xu hướng việc làm</a></li>
-							<li><a href="CV.jsp">Cách viết CV</a>
-							<li><a href="kiNang.jsp">Kĩ năng phỏng vấn</a></li>
-							<li><a href="cauHoi.jsp">Câu hỏi phỏng vấn thường gặp</a></li>
+							<li><a href="jsp/tendency.jsp">Xu hướng việc làm</a></li>
+							<li><a href="jsp/CV.jsp">Cách viết CV</a>
+							<li><a href="jsp/kiNang.jsp">Kĩ năng phỏng vấn</a></li>
+							<li><a href="jsp/cauHoi.jsp">Câu hỏi phỏng vấn thường gặp</a></li>
 						</ul></li>
 					<li><span class="glyphicon glyphicon-send"></span><a
-						href="lienHe.jsp">Liên hệ</a></li>
+						href="jsp/lienHe.jsp">Liên hệ</a></li>
 					<li><span class="glyphicon glyphicon-pencil"></span><a
-							href="vietBai.jsp">Viết bài</a></li>
+						href="jsp/vietBai.jsp">Viết bài</a></li>
 				</ul>
 				<div class="clear"></div>
 			</div>
@@ -83,46 +83,70 @@
 		<div class="cont">
 			<div class="row" id="welcome">
 				<div class="col-md-2" id="he">
-					<img src="<c:url value ="../resources/image/icon_hello_1.png"/>" />
+					<img src="<c:url value ="resources/image/icon_hello_1.png"/>" />
 				</div>
 				<div class="col-md-3" id="hello">
 					<p>WELCOME EVERYONE</p>
 				</div>
 				<div class="col-md-2" id="he">
-					<img src="<c:url value ="../resources/image/icon_hello_3.png"/>" />
+					<img src="<c:url value ="resources/image/icon_hello_3.png"/>" />
 				</div>
 			</div>
 		</div>
 
-	
-			<c:forEach items="${listBaiViet}" var="item">
-				<div class="row">
+		<div>
+		<c:forEach items="${listBaiViet}" var="item">
+		
+			<div class="row" style="padding: 15px 0px; ">
 				<div class="col-md-5">
-					<img alt="anhcongty" src="${item.anhCT}" width="450px"
+					<img alt="anhcongty" src="<c:out value="${item.anhCT}" />" width="450px"
 						height="300px">
 				</div>
 				<div class="col-md-7">
-					<h2>${item.tenCT}</h2>
+					<strong style="size: 20px;"><c:out value="${item.tenCT}" /></strong>
 					<p>
 						<strong>Cần tuyển: </strong> <strong
-							style="color: red; font-size: 15px;">${item.tenViecLam}</strong>
+							style="color: red; font-size: 15px;"><c:out value="${item.tenViecLam}" /></strong>
 					</p>
 					<p>
 						<strong>Mức lương: </strong><strong
-							style="color: red; font-size: 15px;">${item.mucLuong}</strong>
+							style="color: red; font-size: 15px;"><c:out value="${item.mucLuong}" /></strong>
 					</p>
-					<p>Số lượng : ${item.soLuong}</p>
-					<p>Địa điểm làm việc : ${item.diaDiem}</p>
-					<a style="color: red; float: right;" href="">XEM CHI TIẾT</a>
+					<p>Số lượng : <c:out value="${item.soLuong}" /></p>
+					<p>Địa điểm làm việc : <c:out value="${item.diaDiem}" /></p>
+					<p>Kinh nghiệm : <c:out value="${item.kinhNghiem}" /></p>
+					<p>Bằng cấp : <c:out value="${item.bangCap}" /></p>
+					<p>Chức vụ : <c:out value="${item.chucVu}" /></p>
+	
+					<input type="button" id="btn1" style="color: red; float: left;" value="XEM CHI TIẾT" />
+					<input type="button"  id="btn2" style="color: red; float: right;" value="RÚT GỌN" />
+				</div>
+				<div id="demo" style="display: none">
+				<p><strong style="color:red">CÔNG VIỆC</strong></p>
+				<p><strong>Hình thức làm việc :</strong> <i><c:out value="${item.hinhThucLamViec}" /></i></p>
+				<p><strong>Thời gian thử việc : </strong><i><c:out value="${item.thoiGianThuViec}" /></i></p>
+				<p><strong>Yêu cầu công việc : </strong></p><p><c:out value="${item.yeuCauCongViec}" /></p>
+				<p><strong>Yêu cầu khác :</strong></p><p> <c:out value="${item.yeuCauKhac}" /></p>
+				<p><strong>Mô tả công việc :</strong></p><p><c:out value="${item.moTaCongViec}" /></p>
+				<p><strong>Quyền lợi : </strong></p><p><c:out value="${item.quyenLoi}" /></p>
+				<p><strong>Hồ sơ bao gồm : </strong></p><p><c:out value="${item.hoSo}" /></p>
+				<p><strong>Hạn nộp hồ sơ : </strong><c:out value="${item.hanNopHoSo}" /></p>
+				<p><strong style="color:red">LIÊN HỆ</strong></p>
+				<p><strong>Người liên hệ : </strong><c:out value="${item.nguoiLienHe}" /></p>
+				<p><strong>Địa chỉ liên hệ : </strong><c:out value="${item.diaChiLienHe}" /></p>
+				<p><strong>Email liên hệ :</strong> <c:out value="${item.emailLienHe}" /></p>
+				<p><strong>Số điện thoại liên hệ :</strong><c:out value="${item.dienThoaiLienHe}" /></p>
+			</div>
+			</div>
+			
+		</c:forEach>
+		</div>
 
-				</div>
-				</div>
-			</c:forEach>
-		
 
 		<div id="footer">
 			<div class="row">
-				<img alt="footer" src="../resources/image/footer.jpg" width="400px" height="150px">
+				<img alt="footer" src="resources/image/footer.jpg" width="400px"
+					height="150px">
 			</div>
 			<div class="row">
 				<div class="col-md-12">XIN CẢM ƠN QUÝ KHÁCH</div>
@@ -133,13 +157,17 @@
 			</div>
 		</div>
 	</div>
-
+	<script language="javascript">
+		document.getElementById("btn1").onclick = function () {
+	    	document.getElementById("demo").style.display = 'block';
+		};
+		document.getElementById("btn2").onclick = function () {
+	    	document.getElementById("demo").style.display = 'none';
+		};
+	</script>
 
 	<script>
 		var el = document.getElementById("header");
-		el.style.backgroundSize = "100% 100%";
-
-		var el = document.getElementById("slide");
 		el.style.backgroundSize = "100% 100%";
 
 		var el = document.getElementById("footer");

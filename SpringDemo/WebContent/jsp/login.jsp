@@ -76,7 +76,7 @@
 <body>
 	<div class="container">
 		<img alt="anh admin" src="<c:url value ="../resources/image/icon_admin.png"/>">
-		<form method="post" action="formUser.html" id = "formUser" onsubmit="return validateForm();">
+		<form method="post" action="${pageContext.request.contextPath}/checkAccount.htm" id = "formUser" onsubmit="return validateForm();">
 			<div class="form-input">
 				<span class="glyphicon glyphicon-user"></span>
 				<input type="text" id="usename" name="usename" onblur = "clearMessage()" placeholder="Nhập tên đăng nhập..."/></br>

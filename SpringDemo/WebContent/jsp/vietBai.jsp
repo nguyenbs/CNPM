@@ -85,8 +85,8 @@ a {
 	<div class="container">
 		<h3 style="color: #fff">CẬP NHẬT BÀI VIẾT</h3>
 		<!-- <img alt="anh admin" src="../resource/image/icon_admin.png"> -->
-		<form method="post" action="${pageContext.request.contextPath}/insertBaiViet.html" id="formVietBai"
-			onsubmit="return validateForm();">
+		<form method="post" action="${pageContext.request.contextPath}/insertBaiViet.htm" id="baiViet"
+			name="baiViet" onsubmit="return validateForm();">
 			<div class="form-input">
 				<span class="glyphicon glyphicon-credit-card"></span><input type="text"
 					id="tenBV" name="tenBV" onblur="clearMessage()"
@@ -266,23 +266,23 @@ a {
 					placeholder="Nhập hồ sơ ứng tuyển..." /> <span id="hoSo-error" class="error">
 				</span>
 			</div>
-			<div class="row" style="padding-left: 57px">
-				<div class="col-md-5">
+			<div class="row" >
+				
 					<div class="form-input">
 						<span class="glyphicon glyphicon-remove"></span> <input type="text"
-							style="width: 210px" id="hanNopHoSo" name="hanNopHoSo"
-							onblur="clearMessage()" placeholder="Nhập hạn nộp hồ sơ..." /> <span
+							 id="hanNopHoSo" name="hanNopHoSo"
+							onblur="clearMessage()" placeholder="Nhập hạn nộp hồ sơ theo định dạng yyyy-mm-dd..." /> <span
 							id="hanNopHoSo-error" class="error"> </span>
-					</div>
+				
 				</div>
-				<div class="col-md-6">
+				
 					<div class="form-input">
 						<span class="glyphicon glyphicon-refresh"></span> <input type="text"
-							style="width: 330px" id="nguoiLienHe" name="nguoiLienHe" onblur="clearMessage()"
+				id="nguoiLienHe" name="nguoiLienHe" onblur="clearMessage()"
 							placeholder="Nhập người liên hệ ..." /> <span
 							id="nguoiLienHe-error" class="error"> </span>
 					</div>
-				</div>
+			
 			</div>
 			<div class="form-input">
 				<span class="glyphicon glyphicon-check"></span> <input type="text"

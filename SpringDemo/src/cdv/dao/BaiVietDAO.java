@@ -13,4 +13,6 @@ public interface BaiVietDAO {
 
 	void insertBaiViet(BaiViet baiViet) throws ClassNotFoundException, SQLException;
 
+	List<BaiViet> getListTimKiem(String timKiem) throws ClassNotFoundException, SQLException;
+
 }
