@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ntc.demo.AddNewPost">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="#006aff"
+                        android:gravity="center"
+                        android:text="Bài Viết Mới"
+                        android:textColor="#FFFFFF"
+                        android:textSize="50dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageButton
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Tên Bài Viết"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Tên Công Việc"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Nhóm nghề"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Nhóm lương"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Vị trí cần tuyển"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mức lương"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Yêu cầu bằng cấp"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Yêu cầu kinh nghiệm"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Số lượng"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Địa điểm làm việc"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hình thức làm việc"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Thời gian thử việc"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Yêu cầu công việc"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Yêu cầu khác"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mô tả công việc"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Quyền lợi"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Yêu cầu hồ sơ"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hạn nộp hồ sơ"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Liên hệ với"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Địa chỉ liên hệ"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Email liên hệ"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Số điện thoại liên hệ"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <CheckBox
+                    android:id="@+id/checkBox12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Viết bài cho công ty"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mã công ty"
+                    android:textSize="25dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="* Bạn nên điền đầy đủ các mục để bài viết được tìm kiếm dễ dàng"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="10dp"
+                    >
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Quay Lại"
+                        android:background="#fc5157"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/btnCreate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tạo ngay"
+                        android:background="#54c647"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
