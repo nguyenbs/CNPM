@@ -37,7 +37,7 @@ public class AccountController {
 			throws ClassNotFoundException, SQLException {
 		accountDAO.insertAccount(account);
 		saveMessageKey(null, "Tạo tài khoản thành công");
-		return "jsp/account";
+		return "index";
 	}
 
 	@RequestMapping(value = "checkAccount")
@@ -49,7 +49,7 @@ public class AccountController {
 		
 		accountDAO.checkAccount(username, password);
 		saveMessageKey(null, "Đăng nhập thành công");
-		return "jsp/login";
+		return "index";
 	}
 
 	public static final String MESSAGES_KEY = "successMessagesKey";

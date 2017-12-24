@@ -28,13 +28,13 @@ public class BaiVietDAOImpl implements BaiVietDAO {
 		Connection con = connect.getConnection();
 		String strQuery = "SELECT * FROM bai_viet WHERE 1 = 1 ";
 		if (nhomNghe.equals("") != true && nhomNghe != null) {
-			strQuery = strQuery + " AND nhom_nghe =" + nhomNghe;
+			strQuery = strQuery + " AND nhom_nghe = " + "'"+nhomNghe+"'";
 		}
-		if (!nhomLuong.equals("") && nhomLuong != null) {
-			strQuery = strQuery + " AND nhom_luong = " + nhomLuong;
+		if (nhomLuong.equals("")!=true && nhomLuong != null) {
+			strQuery = strQuery + " AND nhom_luong = " + "'"+ nhomLuong+"'";
 		}
-		if (khuVuc.equals("") == false && khuVuc != null) {
-			strQuery = strQuery + " AND khu_vuc = " + khuVuc;
+		if (khuVuc.equals("") != true && khuVuc != null) {
+			strQuery = strQuery + " AND khu_vuc = " + "'"+khuVuc+"'";
 		}
 		Statement stm = con.createStatement();
 		ResultSet result = stm.executeQuery(strQuery);

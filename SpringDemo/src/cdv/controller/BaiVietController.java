@@ -60,7 +60,7 @@ public class BaiVietController {
     		HttpServletRequest request, HttpServletResponse response) throws ClassNotFoundException, SQLException{
 		baiVietDAO.insertBaiViet(baiViet);
 		saveMessageKey(null, "Thêm mới thành công");
-		return "jsp/vietBai";
+		return "index";
 	}
 	public static final String MESSAGES_KEY = "successMessagesKey";
 	@SuppressWarnings({ "unchecked", "rawtypes" })

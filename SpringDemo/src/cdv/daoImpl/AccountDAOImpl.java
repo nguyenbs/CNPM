@@ -44,11 +44,11 @@ public class AccountDAOImpl implements AccountDAO {
 		List<Account> list = new ArrayList<Account>();
 		Connection con = connect.getConnection();
 		String strQuery = "SELECT * FROM tai_khoan WHERE 1=1" ;
-		/*if(ten_dang_nhap != null || ten_dang_nhap.equals("")!=true){
-			strQuery = strQuery + " AND ten_dang_nhap =" + tenDangNhap;
-		}if(mat_khau != null || mat_khau.equals("")!=true){
-			strQuery = strQuery + " AND mat_khau = " +  matKhau;
-		*/
+		if(tenDangNhap != null && tenDangNhap.equals("")!=true){
+			strQuery = strQuery + " AND ten_dang_nhap = " + "'"+tenDangNhap+"'";
+		}if(tenDangNhap != null && tenDangNhap.equals("")!=true){
+			strQuery = strQuery + " AND mat_khau = " +  "'"+matKhau+"'";
+		}
 		Statement stm = con.createStatement();
 		ResultSet result = stm.executeQuery(strQuery);
 		while (result.next()) {
